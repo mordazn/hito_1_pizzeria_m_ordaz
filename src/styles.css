@@ -1,0 +1,48 @@
+/* ——— Variables base claras ——— */
+:root{
+  --bg:#ffffff;
+  --fg:#212529;
+  --muted:#6c757d;
+  --card-border:#e5e7eb;
+}
+
+/* ——— Layout general (body blanco) ——— */
+body{
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* ——— Hero con imagen de fondo y overlay ——— */
+header.hero{
+  background-image:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("./assets/img/Header.jpg");  /* 👈 Asegúrate que la ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #ddd;
+  min-height: 300px; /* 👈 le damos altura para que se vea bien */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-overlay{
+  backdrop-filter: saturate(110%) contrast(105%);
+}
+
+/* ——— Footer ——— */
+footer{
+  border-top: none;
+}
+
+/* ——— Cards claras como en la maqueta ——— */
+.card{
+  border: 1px solid var(--card-border) !important;
+}
+
+.small-muted{ color: var(--muted); }
+
+/* ——— Ayudas ——— */
+.app{ min-height: 100dvh; display: flex; flex-direction: column; }
+main{ flex: 1; }
