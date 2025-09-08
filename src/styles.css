@@ -1,3 +1,57 @@
+.login-container p, .register-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* —— Navbar personalizada —— */
+.custom-navbar {
+  background: #212529;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 48px;
+  font-size: 1rem;
+}
+.custom-navbar__brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.custom-navbar__links {
+  display: flex;
+  gap: 8px;
+}
+.custom-navbar__btn {
+  background: #343a40;
+  color: #fff;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 4px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-right: 2px;
+  transition: background 0.2s, border 0.2s;
+}
+.custom-navbar__btn:hover {
+  background: #ffc107;
+  color: #212529;
+  border: 1px solid #ffc107;
+}
+.custom-navbar__total {
+  background: #212529;
+  color: #fff;
+  border: 1px solid #343a40;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.custom-navbar__cart {
+  font-size: 1.1rem;
+}
 /* ——— Variables base claras ——— */
 :root{
   --bg:#ffffff;
@@ -34,6 +88,12 @@ header.hero{
 /* ——— Footer ——— */
 footer{
   border-top: none;
+  background: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0 8px 0;
+  font-size: 1rem;
+  margin-top: auto;
 }
 
 /* ——— Cards claras como en la maqueta ——— */
@@ -46,3 +106,64 @@ footer{
 /* ——— Ayudas ——— */
 .app{ min-height: 100dvh; display: flex; flex-direction: column; }
 main{ flex: 1; }
+
+/* —— Formulario centrado —— */
+.login-container, .register-container {
+  background: #fff;
+  margin: 40px auto;
+  padding: 32px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container h2, .register-container h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.login-container form, .register-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-container label, .register-container label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.login-container input, .register-container input {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.login-container button, .register-container button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.login-container button:hover, .register-container button:hover {
+  background: #1565c0;
+}
+
+.login-container p, .register-container p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
